@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    font-size: 18px;
+    font-weight: 500;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+/********    header      ********/
+
+
+header{
+    grid-column:span 2 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 0.5rem;
+}
+
+
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+    ;
+}
+.dropdown-list li{
+    margin: 0;
+}
+
+a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.registration button{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+.registration button:nth-child(2){
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 12px;
+}
+.registration button:nth-child(2):hover{
+    border: 1px solid hsl(0, 0%, 8%);
+}
+
+.registration button:hover{
+    color: hsl(0, 0%, 8%);
+ 
+}
+
+/************** main part  ***************/
+
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.right-main img {
+    max-width: 100%;
+    max-height: 500px;
+    float: left;
+}
+/* .right-main {
+    background-image: url("/images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    padding: 175px;
+} */
+
+.left-main{
+    padding: 2.5rem;
+}
+
+.left-main h1{
+    color: hsl(0, 0%, 8%);
+    margin-bottom: 1rem;
+    font-size: 45px;
+}
+
+.left-main p{
+    margin: 1rem 0;
+}
+
+.left-main button{
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border-radius: 12px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.left-main button:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.client-images{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin-top: 1.5rem;
+}
